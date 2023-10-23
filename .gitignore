@@ -1,0 +1,15 @@
+# Keep alphabetic order
+/.idea/
+/.vscode/
+/.vs/
+/[Aa]ssets/Plugins/Editor/JetBrains*
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ibrary/
+/[Ll]ogs/
+/[Mm]emoryCaptures/
+/node_modules/
+/[Oo]bj/
+/[Rr]ecordings/
+/[Tt]emp/
+/[Uu]ser[Ss]ettings/
