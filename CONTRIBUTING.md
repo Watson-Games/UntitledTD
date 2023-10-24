@@ -11,3 +11,5 @@ npx husky install
 ```shell
 git cz
 ```
+4. In the "Entities" section of the Unity preferences, set the "Scene View Mode" to "Runtime Data". 
+5. In the "Editor" section of the project settings, enable "Enter Play Mode Options" but leave "Reload Domain" and "Reload Scene" disabled.
