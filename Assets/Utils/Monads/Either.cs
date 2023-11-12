@@ -23,48 +23,56 @@ namespace UntitledTD.Utils.Monads
             _right = Maybe<TR>.Some(right);
         }
 
+        [BurstCompile]
         [Pure]
         public static Either<TL, TR> Left(TL left)
         {
             return new Either<TL, TR>(left);
         }
 
+        [BurstCompile]
         [Pure]
         public static Either<TL, TR> Right(TR right)
         {
             return new Either<TL, TR>(right);
         }
 
+        [BurstCompile]
         [Pure]
         public bool IsLeft()
         {
             return _left.IsSome();
         }
 
+        [BurstCompile]
         [Pure]
         public bool IsRight()
         {
             return _right.IsSome();
         }
 
+        [BurstCompile]
         [Pure]
         public bool IsBottom()
         {
             return _left.IsNone() && _right.IsNone();
         }
 
+        [BurstCompile]
         [Pure]
         public TL UnwrapLeft()
         {
             return _left.Unwrap();
         }
 
+        [BurstCompile]
         [Pure]
         public TR UnwrapRight()
         {
             return _right.Unwrap();
         }
 
+        [BurstCompile]
         [Pure]
         public void Deconstruct(out Maybe<TL> left, out Maybe<TR> right)
         {

@@ -16,30 +16,35 @@ namespace UntitledTD.Utils.Monads
             _isSome = true;
         }
 
+        [BurstCompile]
         [Pure]
         public static Maybe<T> Some(T value)
         {
             return new Maybe<T>(value);
         }
 
+        [BurstCompile]
         [Pure]
         public static Maybe<T> None()
         {
             return new Maybe<T>();
         }
 
+        [BurstCompile]
         [Pure]
         public bool IsSome()
         {
             return _isSome;
         }
 
+        [BurstCompile]
         [Pure]
         public bool IsNone()
         {
             return !IsSome();
         }
 
+        [BurstCompile]
         [Pure]
         public T Unwrap()
         {

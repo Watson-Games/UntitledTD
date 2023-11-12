@@ -1,4 +1,6 @@
 using Unity.Burst;
+using Unity.Collections;
+using UntitledTD.Utils.Monads;
 
 namespace UntitledTD.Utils.Errors
 {
@@ -6,6 +8,7 @@ namespace UntitledTD.Utils.Errors
     public readonly struct Error
     {
         public ErrorCode Code { get; init; }
-        public string Message { get; init; }
+        public FixedString512Bytes Message { get; init; }
+        public Maybe<FixedString4096Bytes> Details { get; init; }
     }
 }
